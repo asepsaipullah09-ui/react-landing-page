@@ -271,6 +271,17 @@ header {
   transform: scale(1.1);
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Batas lebar section */
 .hero,
 .features {

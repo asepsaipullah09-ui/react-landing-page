@@ -6,7 +6,7 @@ function Features() {
             <h2>What I Do</h2>
 
             <div className="features-grid">
-                <div className="feature-card">
+                <div className="feature-card reveal">
                     <div className="feature-icon">
                         <FaMobileAlt />
                     </div>
@@ -15,7 +15,7 @@ function Features() {
                     <p>Website nyaman di semua device.</p>
                 </div>
 
-                <div className="feature-card">
+                <div className="feature-card reveal">
                     <div className="feature-icon">
                         <FaLaptopCode />
                     </div>
@@ -24,11 +24,11 @@ function Features() {
                     <p>Membangun UI modern & reusable.</p>
                 </div>
 
-                <div className="feature-card">
+                <div className="feature-card reveal">
                     <div className="feature-icon">
                         <FaCode />
                     </div>
-                    
+
                     <h3>Clean Code</h3>
                     <p>Kode rapi dan mudah dikembangkan.</p>
                 </div>
