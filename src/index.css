@@ -23,11 +23,9 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
 }
 
 h1 {
@@ -107,10 +105,12 @@ header {
 
 /* Hero */
 .hero {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  text-align: left;
-  gap: 60px;
+  background: radial-gradient(
+    circle at top left,
+    #1e293b,
+    #020617
+  );
+  border-radius: 32px;
 
   padding: 120px 20px;
   max-width: 1100px;
@@ -134,7 +134,7 @@ header {
 
 .hero-content p {
   margin: 1rem 0 2rem;
-  color: #555;
+  color: #cbd5f5;
 }
 
 .hero-image {
@@ -147,10 +147,10 @@ header {
 }
 
 .hero-image img {
-  max-width: 100%;
+  width: 100%;
   max-width: 420px;
-  border-radius: 24px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); 
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 .hero h2 {
@@ -166,6 +166,19 @@ header {
 .hero-buttons {
   display: flex;
   gap: 1 rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 64px;
 }
 
 /* Button */
@@ -206,6 +219,8 @@ header {
   max-width: 1100px;
   margin: auto;
   text-align: center;
+
+  margin-top: 120px;
 }
 
 .features h2 {
@@ -214,14 +229,15 @@ header {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
 }
 
 .feature-card {
-  padding: 25px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.06);
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -285,7 +301,7 @@ header {
   }
 
   .hero-image {
-    margin-top: 40px;
+    margin-top: 32px;
   }
 
   .hero h2 {
@@ -295,5 +311,10 @@ header {
   .hero-buttons {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .container-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 }

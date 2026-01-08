@@ -1,22 +1,22 @@
 function Features() {
     return (
         <section id="features" className="features">
-            <h2>Why Choose Us</h2>
+            <h2>What I Do</h2>
 
             <div className="features-grid">
                 <div className="feature-card">
-                    <h3>Materi Terstruktur</h3>
-                    <p>Belajar frontend dari dasar sampai mahir dengan alur yang jelas.</p>
+                    <h3>Responsive Design</h3>
+                    <p>Website nyaman di semua device.</p>
                 </div>
 
                 <div className="feature-card">
-                    <h3>Praktik Nyata</h3>
-                    <p>Setiap materi disertai project agar skill benar-benar terpakai.</p>
+                    <h3>React Development</h3>
+                    <p>Membangun UI modern & reusable.</p>
                 </div>
 
                 <div className="feature-card">
-                    <h3>Siap Kerja</h3>
-                    <p>Kurikulum disesuaikan dengan kebutuhan industri saat ini.</p>
+                    <h3>Clean Code</h3>
+                    <p>Kode rapi dan mudah dikembangkan.</p>
                 </div>
             </div>
         </section>
