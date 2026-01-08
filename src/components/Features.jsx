@@ -1,6 +1,6 @@
 function Features() {
     return (
-        <section id="features" id="features">
+        <section id="features" className="features">
             <h2>Why Choose Us</h2>
 
             <div className="features-grid">
